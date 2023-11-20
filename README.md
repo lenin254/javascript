@@ -10,7 +10,7 @@ JavaScript proporciona soporte para la herencia a través del mecanismo de proto
 El Document Object Model (Modelo de Objetos del Documento), es una interfaz de programación para documentos HTML y XML. Para manipular esto, JS usa JQuery.
 ### ¿Qué puede hacer Javascript ?
 #### Booleano
-[RESPUESTA]
+Se realizo un booleano.js para probar las comparaciones cuestionadas, se obtuvo `True,false,flase,true,true`, luego tambien se hizo con la recomendacion y se obtuvo `false,false,false,false,false`
 #### Arrays
 [RESPUESTA]
 #### Clausuras

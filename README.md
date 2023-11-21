@@ -54,6 +54,6 @@ Entonces, la salida será:
 
 La variable `baz` se incrementa en 1 después de su uso, por lo que su valor se convierte en `4` después de la llamada.
 #### Algoritmos
-[RESPUESTA]
+La funcion reescrita con complejidad `O(N)` es:
 #### Clases
 [RESPUESTA]

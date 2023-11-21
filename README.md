@@ -34,7 +34,25 @@ Analizamos el comportamiento:
    - Justificación: cuando comparo un array vcio con un numero `0`, JS intenta convertir ambos lados al mismo tipo de comparacion. El array se evalua como `""`, que se convierte numericamente a `0`.
 
 #### Clausuras
-[RESPUESTA]
+Aqui justmaente tenemos un ejemplo de como podemos acceder a la funcion interna con una funcion externa, el funcionamiento del codigo Clausuras.js es de la siguiente manera:
+1. La función `f1` toma un parámetro `x` y define una variable local `baz` con un valor de `3`.
+2. `f1` retorna una función interna que tiene acceso al alcance de `f1`, incluyendo la variable `x` y `baz`.
+3. Se crea una variable `bar` que almacena el resultado de llamar a `f1(5)`. Esto significa que `bar` ahora es una función que tiene acceso a la variable `x` y `baz` de la llamada original a `f1`.
+4. Se llama a `bar(11)`. En este punto, la función interna de `f1` se ejecuta con `x` igual a `5` y `y` igual a `11`. Se imprime en la consola la suma de `x + y + (baz++)`.
+
+Vamos a calcular la salida:
+
+- `x` es `5`.
+- `y` es `11`.
+- `baz` se incrementa después de la suma.
+
+Entonces, la salida será:
+
+```
+5 + 11 + 3 = 19
+```
+
+La variable `baz` se incrementa en 1 después de su uso, por lo que su valor se convierte en `4` después de la llamada.
 #### Algoritmos
 [RESPUESTA]
 #### Clases

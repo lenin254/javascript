@@ -11,3 +11,16 @@ function greatestNumber(array) {
       }
     }
   }
+
+function greatestNumberNew(array) {
+    let maxNumber = array[0];
+  
+    for (let i = 1; i < array.length; i++) {
+      if (array[i] > maxNumber) {
+        maxNumber = array[i];
+      }
+    }
+  
+    return maxNumber;
+  }
+  

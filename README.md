@@ -54,6 +54,30 @@ Entonces, la salida será:
 
 La variable `baz` se incrementa en 1 después de su uso, por lo que su valor se convierte en `4` después de la llamada.
 #### Algoritmos
-La funcion reescrita con complejidad `O(N)` es:
+**El primer algoritmo:** Podemos optimizar el codigo utilizando un solo bucle para realizar un seguimiento del mayor número encontrado hasta el momento, tiene complejidad `O(N)`:
+```javascript
+function greatestNumberNEW(array) {
+  let numeroMaximo = array[0];
+
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] > numeroMaximo) {
+      numeroMaximo = array[i];
+    }
+  }
+
+  return numeroMaximo;
+}
+```
+**El segundo algoritmo:** Tiene complejidad `O(N)` con el bucle for con complejidad lineal, Ademas para mejorar el codigo simplemente podemos hacer que cuando encuentra la primera `X` retorne.
+```javascript
+function containsXmod(string) {
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === "X") {
+      return true; // Se encontró una "X", devolver true de inmediato
+    }
+  }
+  return false; // No se encontró ninguna "X" en toda la cadena
+}
+```
 #### Clases
 [RESPUESTA]

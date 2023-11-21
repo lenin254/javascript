@@ -104,4 +104,4 @@ function primerNoDuplicado(cadena) {
   console.log(resultado); // Salida esperada como en la actividad: "n"
 ```
 #### Clases
-[RESPUESTA]
+El codigo se encuentra en Clases.js
